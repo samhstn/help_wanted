@@ -10,10 +10,10 @@ describe('"/" endpoint: ', () => {
       .expect('content-type', /text\/html/)
       .end((err, res) => {
         [
-          'Gitodoro',
+          'Elm',
           'DOCTYPE',
-          '<div id="app"></div>',
-          '<script src="/bundle.js"'
+          '<div id="main"></div>',
+          '<script src="/app.js"'
         ].forEach((str) => {
           expect(res.text).to.include(str);
           expect(res.statusCode).to.equal(200);

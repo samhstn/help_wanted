@@ -13,7 +13,7 @@ const authCheck = require('./auth_check.js');
 const app = express();
 
 app.use(morgan('dev'));
-app.use(express.static('build'));
+app.use(express.static('dist'));
 
 app.get('/login', githubOauth.login);
 app.get('/welcome', githubOauth.welcome);
