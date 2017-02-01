@@ -28,15 +28,18 @@
     "pre-commit": "^1.2.2"
   },
   "dependencies": {
+    "chai": "^3.5.0",
     "css-loader": "0",
     "elm-webpack-loader": "4",
     "env2": "^2.1.1",
     "express": "^4.14.0",
     "file-loader": "0",
+    "mocha": "^3.2.0",
     "morgan": "^1.7.0",
     "ramda": "^0.23.0",
     "request": "^2.79.0",
     "style-loader": "0",
+    "supertest": "^3.0.0",
     "url-loader": "0",
     "webpack": "1",
     "webpack-dev-middleware": "1",
