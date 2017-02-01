@@ -1,0 +1,49 @@
+{
+  "name": "help-wanted",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha ./test/api/runner.js",
+    "testmon": "nodemon -w test -w src -x 'npm test'",
+    "start": "node src/api/start.js",
+    "startmon": "nodemon -e html,js,json,css -w node_modules/app -w src -x 'npm start'",
+    "debug:server": "node --inspect src/api/app.js --debug-brk",
+    "lint": "echo 'no lint configured'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shouston3/help_wanted.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shouston3/help_wanted/issues"
+  },
+  "homepage": "https://github.com/shouston3/help_wanted#readme",
+  "devDependencies": {
+    "nock": "^9.0.2",
+    "nodemon": "^1.11.0",
+    "pre-commit": "^1.2.2"
+  },
+  "dependencies": {
+    "css-loader": "0",
+    "elm-webpack-loader": "4",
+    "env2": "^2.1.1",
+    "express": "^4.14.0",
+    "file-loader": "0",
+    "morgan": "^1.7.0",
+    "ramda": "^0.23.0",
+    "request": "^2.79.0",
+    "style-loader": "0",
+    "url-loader": "0",
+    "webpack": "1",
+    "webpack-dev-middleware": "1",
+    "webpack-dev-server": "1"
+  },
+  "pre-commit": [
+    "lint",
+    "test"
+  ]
+}
